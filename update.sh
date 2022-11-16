@@ -57,7 +57,7 @@ echo "\`\`\`bash" >> README.md;
 ping -A -D -c 20 -v 8.8.8.8 >> ping.txt;
 git add .;
 git commit -m "begin prepare to build angular";
-export NODE_OPTIONS="--max-old-space-size=8000"; time yarn run ng build --configuration production --output-path docs >> README.md;
+export NODE_OPTIONS="--max-old-space-size=8000"; time yarn run ng build --configuration production --output-path docs --output-hashing none --stats-json true --subresource-integrity true --verbose true >> README.md;
 echo "\`\`\`" >> README.md;
 git add .;
 git commit -m "end prepare to build angular";
