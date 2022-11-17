@@ -46,7 +46,7 @@ export class QuizComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log({ title: this.activatedRoute.snapshot.params.title });
+    console.log({ title: this.activatedRoute.snapshot.params['title'] });
     const myNavigationEnd$ = this.router.events.pipe(
       filter((e) : e is NavigationEnd => e instanceof NavigationEnd),
       map(e => {

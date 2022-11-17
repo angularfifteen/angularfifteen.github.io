@@ -1487,3 +1487,8 @@ Error: src/app/quiz/quiz.component.ts:65:55 - error TS4111: Property 'title' com
 2022-11-16 19:26:18: webpack 5.75.0 compiled in 187800 ms (4e9c1b788735e1bf)
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
+Wed Nov 16 07:32:39 PM EST 2022
+yarn version v1.22.19
+info Current version: 0.0.3
+info New version: 0.0.4
+Done in 0.32s.
