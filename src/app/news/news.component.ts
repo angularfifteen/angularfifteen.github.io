@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { News } from '../news';
@@ -24,8 +24,8 @@ export class NewsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log({ title: this.activatedRoute.snapshot.params.title });
-    const title = this.activatedRoute.snapshot.params.title;
+    console.log({ title: this.activatedRoute.snapshot.params['title'] });
+    const title = this.activatedRoute.snapshot.params['title'];
     this.api.getNews(title);
     this.api.myObservable$.subscribe((response) => {
       console.log({ response });
