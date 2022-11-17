@@ -48,6 +48,12 @@ git commit -m "end update node";
 export NODE_OPTIONS="--max-old-space-size=8000";
 
 git add .;
+git commit -m "begin yarn";
+time yarn;
+git add .;
+git commit -m "end yarn";
+
+git add .;
 git commit -m "begin prepare to update angular";
 export NODE_OPTIONS="--max-old-space-size=8000"; time yarn run ng update @angular/core @angular/cli @angular/material @angular/localize;
 git add .;
