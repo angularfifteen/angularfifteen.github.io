@@ -62,7 +62,7 @@ export class QuizComponent implements OnInit {
   }
 
   private getData(): void {
-    const title = this.activatedRoute.snapshot.params.title;
+    const title = this.activatedRoute.snapshot.params['title'];
     console.log({ title });
     if (title === undefined) {
       this.api.getQuiz();
