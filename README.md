@@ -52,3 +52,215 @@ success Already up-to-date.
 Done in 0.36s.
 ```
 ```bash
+yarn run v1.22.19
+$ ng build --configuration production --output-path docs --output-hashing none --stats-json true --subresource-integrity true --verbose true
+asset main.js 584 KiB {179} [emitted] (name: main)
+asset styles.css 286 KiB {532} [emitted] (name: styles)
+asset polyfills.js 33.1 KiB {429} [emitted] (name: polyfills)
+asset 3rdpartylicenses.txt 14.9 KiB [emitted]
+asset runtime.js 906 bytes {666} [emitted] (name: runtime)
+Entrypoint main 585 KiB = runtime.js 906 bytes main.js 584 KiB
+Entrypoint polyfills 34 KiB = runtime.js 906 bytes polyfills.js 33.1 KiB
+Entrypoint styles 286 KiB = runtime.js 906 bytes styles.css 286 KiB
+chunk {179} (runtime: runtime) main.js (main) 5.55 MiB [initial]
+  cached modules 857 KiB [cached] 1 module
+  ./src/main.ts + 207 modules [335] 4.71 MiB {179} [built]
+    [no exports used]
+    entry /home/kushal/src/angular/angularfifteen/src/main.ts main
+chunk {429} (runtime: runtime) polyfills.js (polyfills) 106 KiB [initial]
+  cached modules 106 KiB [cached] 1 module
+chunk {532} (runtime: runtime) styles.css (styles) 100 bytes (javascript) 320 KiB (css/mini-extract) [initial]
+  cached modules 50 bytes (javascript) 129 KiB (css/mini-extract) [cached] 2 modules
+  dependent modules 191 KiB [dependent] 1 module
+  ./src/styles.scss?ngGlobalStyle [847] 50 bytes {532} [built]
+    [no exports used]
+    entry /home/kushal/src/angular/angularfifteen/src/styles.scss?ngGlobalStyle styles
+    5650 ms (resolving: 986 ms, restoring: 0 ms, integration: 0 ms, building: 4664 ms, storing: 0 ms)
+chunk {666} (runtime: runtime) runtime.js (runtime) 2.48 KiB [entry]
+  cached modules 2.48 KiB [cached] 4 modules
+  
+
+LOG from webpack.FileSystemInfo
+    384 new snapshots created
+    35% root snapshot uncached (1273 / 3651)
+    25% children snapshot uncached (835 / 3386)
+    3269 entries tested
+    File info in cache: 1083 timestamps 53 hashes 53 timestamp hash combinations
+    File timestamp snapshot optimization: 32% (22/68) entries shared via 1 shared snapshots (1 times referenced)
+    File timestamp hash combination snapshot optimization: 74% (1991/2673) entries shared via 11 shared snapshots (286 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Missing items snapshot optimization: 88% (4041/4574) entries shared via 256 shared snapshots (784 times referenced)
+    Managed items info in cache: 216 items
+    Managed items snapshot optimization: 51% (619/1218) entries shared via 38 shared snapshots (113 times referenced)
+    Managed files snapshot optimization: 75% (1541/2066) entries shared via 101 shared snapshots (244 times referenced)
+    Managed missing snapshot optimization: 80% (2235/2801) entries shared via 127 shared snapshots (291 times referenced)
++ 2 hidden lines
+
+LOG from webpack.Compilation
+<t> runtime requirements.modules: 0.158153 ms
+<t> runtime requirements.chunks: 0.180069 ms
+<t> runtime requirements.entries: 1.426752 ms
+<t> finish module profiles: 11.479969 ms
+<t> compute affected modules: 0.003242 ms
+<t> finish modules: 77.499411 ms
+<t> report dependency errors and warnings: 15.838878 ms
+<t> optimize dependencies: 41.742599 ms
+<t> create chunks: 11.264886 ms
+<t> compute affected modules with chunk graph: 0.006042 ms
+<t> optimize: 65.105809 ms
+    7 modules hashed, 0 from cache (0.02 variants per module in average)
+<t> module hashing: 26.933027 ms
+    0% code generated (0 generated, 7 from cache)
+<t> code generation: 0.381539 ms
+<t> runtime requirements.modules: 0.08453 ms
+<t> runtime requirements.chunks: 0.076669 ms
+<t> runtime requirements.entries: 0.680656 ms
+<t> runtime requirements: 1.083291 ms
+<t> hashing: initialize hash: 0.008011 ms
+<t> hashing: hash warnings: 0.005538 ms
+<t> hashing: sort chunks: 0.076891 ms
+<t> hashing: hash runtime modules: 1.510442 ms
+<t> hashing: hash chunks: 1.785103 ms
+<t> hashing: hash digest: 0.02626 ms
+<t> hashing: process full hash modules: 0.330894 ms
+<t> hashing: 4.008119 ms
+    0% code generated (0 generated, 4 from cache)
+<t> record hash: 0.090713 ms
+<t> module assets: 0.257424 ms
+<t> create chunk assets: 1.744838 ms
+<t> process assets: 1701.418462 ms
+
+LOG from webpack.Compiler
+<t> make hook: 5695.80594 ms
+<t> finish make hook: 0.119389 ms
+<t> finish compilation: 104.868408 ms
+<t> seal compilation: 1856.3513440000002 ms
+<t> afterCompile hook: 0.160968 ms
+<t> emitAssets: 9.716301 ms
+<t> emitRecords: 0.094862 ms
+<t> done hook: 462.359649 ms
+<t> beginIdle: 0.660444 ms
+
+LOG from webpack.Compilation.ModuleProfile
+     | 197 ms (parallelism 5) resolve to new modules > ./src/styles.scss?ngGlobalStyle
+     | 197 ms (parallelism 5) resolve to new modules > ./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css?ngGlobalStyle
+<i>  | 247 ms (parallelism 5.1) resolve to new modules > ./node_modules/@angular/localize/fesm2020/init.mjs
+<i>  | 245 ms (parallelism 5.1) resolve to new modules > ./node_modules/zone.js/fesm2015/zone.js
+<i>  | 246 ms (parallelism 5.1) resolve to new modules > ./src/main.ts
+     | 107 ms (parallelism 5.1) resolve to new modules > ./src/environments/environment.ts
+     | 105 ms (parallelism 5.2) resolve to new modules > ./node_modules/@angular/core/fesm2020/core.mjs
+     | 106 ms (parallelism 5.2) resolve to new modules > ./node_modules/@angular/platform-browser/fesm2020/platform-browser.mjs
+<i> 1731 ms resolve to new modules
+     | 84 ms (parallelism 5.7) integrate modules > ./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css?ngGlobalStyle
+     | 39 ms (parallelism 6) integrate modules > ./node_modules/@angular/localize/fesm2020/init.mjs
+     | 39 ms (parallelism 6) integrate modules > ./node_modules/zone.js/fesm2015/zone.js
+     | 39 ms (parallelism 6) integrate modules > ./src/main.ts
+    272 ms integrate modules
+<w>  |  | 519 ms (parallelism 9) build modules > ./src/styles.scss?ngGlobalStyle
+<w>  | 519 ms build modules > 1 x javascript/auto with ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]
+<i>  |  | 494 ms (parallelism 9.1) build modules > ./src/styles.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]!./src/styles.scss?ngGlobalStyle
+<i>  | 494 ms build modules > 1 x javascript/auto with ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]
+<w> 1099 ms build modules
+     | 84 ms (parallelism 5.7) restore modules > ./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css?ngGlobalStyle
+     | 39 ms (parallelism 6) restore modules > ./node_modules/@angular/localize/fesm2020/init.mjs
+     | 39 ms (parallelism 6) restore modules > ./node_modules/zone.js/fesm2015/zone.js
+     | 39 ms (parallelism 6) restore modules > ./src/main.ts
+    272 ms restore modules
++ 14 hidden lines
+
+LOG from webpack.ResolverCachePlugin
+    11% really resolved (373 real resolves with 373 cached but invalid, 2929 cached valid, 0 concurrent)
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 4.524463 ms
+<t> figure out provided exports: 10.780578 ms
+    8% of exports of modules have been determined (10 no declared exports, 27 not cached, 0 flagged uncacheable, 320 from cache, 0 from mem cache, 1 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.007253 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.517764 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 14.126519 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.633878 ms
+<t> trace exports usage in graph: 26.478579 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 7.168008 ms
+<t> visitModules: visiting: 8.665095 ms
+    477 queue items processed (216 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 8.776816 ms
+<t> connectChunkGroups: 0.004963 ms
+<t> cleanup: 0.004373 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.049062 ms
+<t> modules: 4.505336 ms
+<t> queue: 0.00716 ms
+<t> maxSize: 0.042983 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 2.073686 ms
+<t> sort relevant modules: 0.341893 ms
+<t> find modules to concatenate: 21.14536 ms
+<t> sort concat configurations: 0.049215 ms
+<t> create concatenated modules: 16.726852 ms
++ 3 hidden lines
+
+LOG from build-angular.CssOptimizerPlugin
+<t> optimize css assets: 0.292153 ms
++ 1 hidden lines
+
+WARNING in ./src/styles.scss?ngGlobalStyle (./src/styles.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]!./src/styles.scss?ngGlobalStyle)
+Module Warning (from ./node_modules/sass-loader/dist/cjs.js):
+The same color styles are generated multiple times. Read more about how style duplication can be avoided in a dedicated guide. https://github.com/angular/components/blob/main/guides/duplicate-theming-styles.md
+
+node_modules/@angular/material/core/theming/_theming.scss 351:7          private-check-duplicate-theme-styles()
+node_modules/@angular/material/legacy-core/theming/_all-theme.scss 43:3  all-legacy-component-themes()
+src/styles.scss 67:1                                                     root stylesheet
+SassWarning: The same color styles are generated multiple times. Read more about how style duplication can be avoided in a dedicated guide. https://github.com/angular/components/blob/main/guides/duplicate-theming-styles.md
+
+node_modules/@angular/material/core/theming/_theming.scss 351:7          private-check-duplicate-theme-styles()
+node_modules/@angular/material/legacy-core/theming/_all-theme.scss 43:3  all-legacy-component-themes()
+src/styles.scss 67:1                                                     root stylesheet
+
+    at Object.warn (/home/kushal/src/angular/angularfifteen/node_modules/sass-loader/dist/utils.js:189:37)
+    at Worker.<anonymous> (/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/sass/sass-service.js:138:36)
+    at Worker.emit (node:events:513:28)
+    at MessagePort.<anonymous> (node:internal/worker:233:53)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:731:20)
+    at exports.emitMessage (node:internal/per_context/messageport:23:28)
+ModuleWarning: Module Warning (from ./node_modules/sass-loader/dist/cjs.js):
+The same color styles are generated multiple times. Read more about how style duplication can be avoided in a dedicated guide. https://github.com/angular/components/blob/main/guides/duplicate-theming-styles.md
+
+node_modules/@angular/material/core/theming/_theming.scss 351:7          private-check-duplicate-theme-styles()
+node_modules/@angular/material/legacy-core/theming/_all-theme.scss 43:3  all-legacy-component-themes()
+src/styles.scss 67:1                                                     root stylesheet
+
+    at Object.emitWarning (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/NormalModule.js:598:6)
+    at Object.warn (/home/kushal/src/angular/angularfifteen/node_modules/sass-loader/dist/utils.js:189:25)
+    at Worker.<anonymous> (/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/sass/sass-service.js:138:36)
+    at Worker.emit (node:events:513:28)
+    at MessagePort.<anonymous> (node:internal/worker:233:53)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:731:20)
+    at exports.emitMessage (node:internal/per_context/messageport:23:28)
+ @ ./src/styles.scss?ngGlobalStyle
+
+2022-11-21 08:25:11: webpack 5.75.0 compiled in 13137 ms (b7a41babb3e6b898)
+
+Initial Chunk Files | Names         |  Raw Size | Estimated Transfer Size
+main.js             | main          | 583.76 kB |               136.64 kB
+styles.css          | styles        | 285.55 kB |                18.08 kB
+polyfills.js        | polyfills     |  33.08 kB |                10.69 kB
+runtime.js          | runtime       | 906 bytes |               517 bytes
+
+| Initial Total | 903.28 kB |               165.92 kB
+
+Build at: 2022-11-21T13:25:13.536Z - Hash: b7a41babb3e6b898 - Time: 15573ms
+Done in 17.88s.
+```
