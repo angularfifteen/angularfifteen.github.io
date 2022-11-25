@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Quiz } from '../quiz';
 import { Option } from '../option';
 import { QuizService } from '../quiz.service';
-import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import { Title } from '@angular/platform-browser';
 import { filter, map } from 'rxjs/operators';
-
+import { MatSnackBar } from '@angular/material/snack-bar';
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
