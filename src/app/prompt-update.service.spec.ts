@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { SwUpdate } from '@angular/service-worker';
+import { ServiceWorkerModule, SwUpdate } from '@angular/service-worker';
 
 import { PromptUpdateService } from './prompt-update.service';
 
@@ -10,6 +10,10 @@ describe('PromptUpdateService', () => {
     TestBed.configureTestingModule({
       providers: [
         SwUpdate,
+        PromptUpdateService
+      ],
+      imports: [
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: false })
       ]
     });
     service = TestBed.inject(PromptUpdateService);

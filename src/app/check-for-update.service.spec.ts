@@ -1,6 +1,6 @@
 import { ApplicationRef } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { SwUpdate } from '@angular/service-worker';
+import { ServiceWorkerModule, SwUpdate } from '@angular/service-worker';
 
 import { CheckForUpdateService } from './check-for-update.service';
 
@@ -12,6 +12,10 @@ describe('CheckForUpdateService', () => {
       providers: [
         ApplicationRef,
         SwUpdate,
+        CheckForUpdateService
+      ],
+      imports: [
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: true })
       ]
     });
     service = TestBed.inject(CheckForUpdateService);
