@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { MaterialModule } from '../material/material.module';
+import { MenuComponent } from '../menu/menu.component';
 
 import { QuizComponent } from './quiz.component';
 
@@ -12,7 +13,7 @@ describe('QuizComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ QuizComponent ],
+      declarations: [ QuizComponent, MenuComponent ],
       imports: [
         HttpClientTestingModule,
         MaterialModule,
