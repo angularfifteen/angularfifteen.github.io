@@ -39,6 +39,7 @@ module.exports = function (config) {
       require('karma-firefox-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-verbose-reporter'),
+      require('karma-spec-reporter'),
       'karma-spec-reporter'
     ],
     client: {
@@ -49,7 +50,7 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
-    reporters: ['progress', 'kjhtml', 'verbose'],
+    reporters: ['progress', 'kjhtml', 'verbose', 'spec'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
