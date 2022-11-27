@@ -7,7 +7,7 @@ git add .;
 git commit -m "add timestamp";
 
 echo '' >> README.md;
-echo '# Coloradoquiz' >> README.md;
+echo '# Angular Fifteen' >> README.md;
 echo '' >> README.md;
 
 echo '' >> README.md;
