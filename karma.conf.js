@@ -40,17 +40,26 @@ module.exports = function (config) {
       require('karma-jasmine-html-reporter'),
       require('karma-verbose-reporter'),
       require('karma-spec-reporter'),
-      'karma-spec-reporter'
+      require('karma-htmlfile-reporter')
     ],
     client: {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, './docs/coverage'),
+      dir: require('path').join(__dirname, './coverage'),
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
-    reporters: ['progress', 'kjhtml', 'verbose', 'spec'],
+    htmlReporter: {
+      outputFile: 'docs/tests/units.html',
+      pageTitle: 'Unit Tests',
+      subPageTitle: 'for Angular fifteen project',
+      groupSuites: true,
+      useCompactStyle: true,
+      useLegacyStyle: false,
+      showOnlyFailed: false
+    },
+    reporters: ['progress', 'kjhtml', 'verbose', 'spec', 'html'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
