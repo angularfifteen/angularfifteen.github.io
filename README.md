@@ -68,3 +68,318 @@ caniuse-lite has been successfully updated
 No target browser changes
 ```
 ```bash
+yarn run v1.22.19
+$ ng build --configuration production --output-path docs --output-hashing none --stats-json true --subresource-integrity true --verbose true
+- Generating browser application bundles (phase: setup)...
+    [webpack.cache.PackFileCacheStrategy] No pack exists at /home/kushal/src/angular/angularfifteen/.angular/cache/16.0.2/angular-webpack/8157fe2dd106acfdb31562de9fe58e21460f01af.pack: Error: ENOENT: no such file or directory, stat '/home/kushal/src/angular/angularfifteen/.angular/cache/16.0.2/angular-webpack/8157fe2dd106acfdb31562de9fe58e21460f01af/index.pack'
+<t> [webpack.cache.PackFileCacheStrategy] restore cache container: 3571.858512 ms
+    [IdleFileCachePlugin] Initial cache was generated and cache will be persisted in 5s.
+✔ Browser application bundle generation complete.
+    [webpack.cache.PackFileCacheStrategy] Pack got invalid because of write to: ResolverCachePlugin|normal|default|dependencyType=|esm|path=|/home/kushal/src/angular/angularfifteen|request=|@angular/localize/init
+asset main.js 598 KiB {179} [emitted] (name: main)
+asset styles.css 271 KiB {532} [emitted] (name: styles)
+asset polyfills.js 33 KiB {429} [emitted] (name: polyfills)
+asset 3rdpartylicenses.txt 14.9 KiB [emitted]
+asset runtime.js 906 bytes {666} [emitted] (name: runtime)
+Entrypoint main 599 KiB = runtime.js 906 bytes main.js 598 KiB
+Entrypoint polyfills 33.9 KiB = runtime.js 906 bytes polyfills.js 33 KiB
+Entrypoint styles 271 KiB = runtime.js 906 bytes styles.css 271 KiB
+chunk {179} (runtime: runtime) main.js (main) 4.76 MiB [initial] [rendered]
+  ./node_modules/@angular/localize/fesm2022/init.mjs + 1 modules [564] 38 KiB {179} [built] [code generated]
+    [no exports used]
+    entry @angular/localize/init main
+  ./src/main.ts + 191 modules [510] 4.72 MiB {179} [built] [code generated]
+    [no exports used]
+    entry /home/kushal/src/angular/angularfifteen/src/main.ts main
+chunk {429} (runtime: runtime) polyfills.js (polyfills) 104 KiB [initial] [rendered]
+  ./node_modules/zone.js/fesm2015/zone.js [583] 104 KiB {429} [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 8:0-605:93
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry zone.js polyfills
+    1654 ms (resolving: 63 ms, restoring: 1 ms, integration: 0 ms, building: 1590 ms, storing: 0 ms)
+chunk {532} (runtime: runtime) styles.css (styles) 100 bytes (javascript) 317 KiB (css/mini-extract) [initial] [rendered]
+  dependent modules 317 KiB [dependent] 2 modules
+  ./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css...(truncated) [294] 50 bytes {532} [built] [code generated]
+    [no exports used]
+    entry /home/kushal/src/angular/angularfifteen/node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css?ngGlobalStyle styles
+    1687 ms (resolving: 63 ms, restoring: 1 ms, integration: 0 ms, building: 1623 ms, storing: 0 ms)
+  ./src/styles.scss?ngGlobalStyle [774] 50 bytes {532} [built] [code generated]
+    [no exports used]
+    entry /home/kushal/src/angular/angularfifteen/src/styles.scss?ngGlobalStyle styles
+    8478 ms (resolving: 63 ms, restoring: 1 ms, integration: 0 ms, building: 8414 ms, storing: 0 ms)
+chunk {666} (runtime: runtime) runtime.js (runtime) 2.48 KiB [entry] [rendered]
+  runtime modules 2.48 KiB 4 modules
+  
+
+LOG from webpack.Compilation
+<t> runtime requirements.modules: 0.40779 ms
+<t> runtime requirements.chunks: 0.415256 ms
+<t> runtime requirements.entries: 1.40917 ms
+<t> runtime requirements.modules: 0.026223 ms
+<t> runtime requirements.chunks: 0.015768 ms
+<t> runtime requirements.entries: 0.191156 ms
+<t> finish module profiles: 10.288829 ms
+<t> compute affected modules: 0.002847 ms
+<t> finish modules: 20.761631 ms
+<t> report dependency errors and warnings: 15.926631 ms
+<t> optimize dependencies: 28.919645 ms
+<t> create chunks: 11.399783 ms
+<t> compute affected modules with chunk graph: 0.004843 ms
+<t> optimize: 56.029867 ms
+    7 modules hashed, 0 from cache (0.02 variants per module in average)
+<t> module hashing: 17.742459 ms
+    100% code generated (7 generated, 0 from cache)
+<t> code generation: 762.129018 ms
+<t> runtime requirements.modules: 0.13531 ms
+<t> runtime requirements.chunks: 0.064243 ms
+<t> runtime requirements.entries: 0.477295 ms
+<t> runtime requirements: 0.875351 ms
+<t> hashing: initialize hash: 0.007862 ms
+<t> hashing: hash warnings: 0.003701 ms
+<t> hashing: sort chunks: 0.056784 ms
+<t> hashing: hash runtime modules: 1.070309 ms
+<t> hashing: hash chunks: 1.290326 ms
+<t> hashing: hash digest: 0.01997 ms
+<t> hashing: process full hash modules: 0.17108 ms
+<t> hashing: 2.810487 ms
+    100% code generated (4 generated, 0 from cache)
+<t> record hash: 0.068971 ms
+<t> module assets: 0.161921 ms
+<t> create chunk assets: 3.478279 ms
+<t> process assets: 13525.183336 ms
+
+LOG from webpack.Compiler
+<t> make hook: 8720.730248 ms
+<t> finish make hook: 0.115913 ms
+<t> finish compilation: 47.018877 ms
+<t> seal compilation: 14410.555934 ms
+<t> afterCompile hook: 0.126321 ms
+<t> emitAssets: 3.737312 ms
+<t> emitRecords: 0.059824 ms
+<t> done hook: 348.821739 ms
+<t> beginIdle: 0.730196 ms
+
+LOG from webpack.Compilation.ModuleProfile
+     | 92 ms (parallelism 3.6) resolve to new modules > ./src/main.ts
+     | 40 ms (parallelism 4.1) resolve to new modules > ./node_modules/@angular/localize/fesm2022/localize.mjs
+     | 37 ms (parallelism 42.1) resolve to new modules > ./node_modules/@angular/router/fesm2022/router.mjs
+    1497 ms resolve to new modules
+<i>  |  | 298 ms (parallelism 5.7) build modules > ./node_modules/@angular/localize/fesm2022/init.mjs
+     |  | 136 ms (parallelism 4.1) build modules > ./node_modules/@angular/localize/fesm2022/localize.mjs
+     |  | 39 ms (parallelism 41.7) build modules > ./node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs
+     |  | 39 ms (parallelism 41.6) build modules > ./node_modules/@angular/platform-browser/fesm2022/animations.mjs
+     |  | 45 ms (parallelism 42.2) build modules > ./node_modules/@angular/core/fesm2022/core.mjs
+     |  | 39 ms (parallelism 42.2) build modules > ./node_modules/@angular/common/fesm2022/http.mjs
+     |  | 47 ms (parallelism 45.8) build modules > ./node_modules/@angular/forms/fesm2022/forms.mjs
+     |  | 47 ms (parallelism 45.9) build modules > ./node_modules/@angular/service-worker/fesm2022/service-worker.mjs
+<i>  | 1546 ms build modules > 61 x javascript/esm with javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]
+<i>  |  | 266 ms (parallelism 6) build modules > ./node_modules/zone.js/fesm2015/zone.js
+<i>  | 455 ms build modules > 229 x javascript/auto with ./node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]
+<i>  |  | 272 ms (parallelism 6) build modules > ./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css?ngGlobalStyle
+<i>  | 272 ms build modules > 1 x javascript/auto with ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].rules[0].oneOf[0].use[1]!./node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].rules[0].oneOf[0].use[2]
+<i>  |  | 348 ms (parallelism 24.2) build modules > ./src/styles.scss?ngGlobalStyle
+<i>  | 348 ms build modules > 1 x javascript/auto with ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]
+<i>  |  | 344 ms (parallelism 24.3) build modules > ./src/styles.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]!./src/styles.scss?ngGlobalStyle
+<i>  | 344 ms build modules > 1 x javascript/auto with ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]
+<i>  |  | 398 ms (parallelism 5.4) build modules > ./src/main.ts
+     |  | 34 ms (parallelism 43) build modules > ./src/app/quiz/quiz.component.ts
+     |  | 34 ms (parallelism 43) build modules > ./src/app/loading/loading.component.ts
+<i>  | 655 ms build modules > 19 x javascript/auto with ./node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!./node_modules/@ngtools/webpack/src/ivy/index.js
+<i> 3651 ms build modules
++ 108 hidden lines
+
+LOG from webpack.ResolverCachePlugin
+    32% really resolved (881 real resolves with 0 cached but invalid, 1909 cached valid, 0 concurrent)
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 1.647344 ms
+<t> figure out provided exports: 10.204469 ms
+    95% of exports of modules have been determined (15 no declared exports, 311 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 6 additional calculations due to dependencies)
+<t> store provided exports into cache: 1.974905 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 11.592961 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 10.047037 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.377716 ms
+<t> trace exports usage in graph: 17.992118 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 7.301437 ms
+<t> visitModules: visiting: 8.901436 ms
+    442 queue items processed (199 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 9.026933 ms
+<t> connectChunkGroups: 0.004572 ms
+<t> cleanup: 0.004105 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.060983 ms
+<t> modules: 5.530271 ms
+<t> queue: 0.012724 ms
+<t> maxSize: 0.066006 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 1.927541 ms
+<t> sort relevant modules: 0.206739 ms
+<t> find modules to concatenate: 24.181185 ms
+<t> sort concat configurations: 0.041523 ms
+<t> create concatenated modules: 10.459114 ms
++ 3 hidden lines
+
+LOG from build-angular.JavaScriptOptimizerPlugin
+<t> optimize asset: runtime.js: 265.692341 ms
+<t> optimize asset: polyfills.js: 646.204963 ms
+<t> optimize asset: main.js: 12235.177543 ms
+<t> optimize js assets: 12367.886219 ms
+
+LOG from build-angular.CssOptimizerPlugin
+<t> optimize asset: styles.css: 27.225594 ms
+<t> optimize css assets: 34.142165 ms
+
+LOG from webpack.FileSystemInfo
+    1195 new snapshots created
+    0% root snapshot uncached (0 / 1909)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 1055 timestamps 53 hashes 53 timestamp hash combinations
+    File timestamp snapshot optimization: 34% (36/105) entries shared via 2 shared snapshots (2 times referenced)
+    File timestamp hash combination snapshot optimization: 82% (5106/6262) entries shared via 12 shared snapshots (805 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Missing items snapshot optimization: 87% (3925/4511) entries shared via 253 shared snapshots (768 times referenced)
+    Managed items info in cache: 167 items
+    Managed items snapshot optimization: 30% (608/2049) entries shared via 32 shared snapshots (103 times referenced)
+    Managed files snapshot optimization: 77% (4933/6398) entries shared via 261 shared snapshots (976 times referenced)
+    Managed missing snapshot optimization: 84% (5622/6686) entries shared via 330 shared snapshots (905 times referenced)
+
+WARNING in ./src/styles.scss?ngGlobalStyle (./src/styles.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]!./src/styles.scss?ngGlobalStyle)
+Module Warning (from ./node_modules/sass-loader/dist/cjs.js):
+The same color styles are generated multiple times. Read more about how style duplication can be avoided in a dedicated guide. https://github.com/angular/components/blob/main/guides/duplicate-theming-styles.md
+
+node_modules/@angular/material/core/theming/_theming.scss 352:7          private-check-duplicate-theme-styles()
+node_modules/@angular/material/legacy-core/theming/_all-theme.scss 43:3  all-legacy-component-themes()
+src/styles.scss 67:1                                                     root stylesheet
+SassWarning: The same color styles are generated multiple times. Read more about how style duplication can be avoided in a dedicated guide. https://github.com/angular/components/blob/main/guides/duplicate-theming-styles.md
+
+node_modules/@angular/material/core/theming/_theming.scss 352:7          private-check-duplicate-theme-styles()
+node_modules/@angular/material/legacy-core/theming/_all-theme.scss 43:3  all-legacy-component-themes()
+src/styles.scss 67:1                                                     root stylesheet
+
+    at Object.warn (/home/kushal/src/angular/angularfifteen/node_modules/sass-loader/dist/utils.js:155:37)
+    at Worker.<anonymous> (/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/sass/sass-service.js:136:36)
+    at Worker.emit (node:events:513:28)
+    at MessagePort.<anonymous> (node:internal/worker:243:53)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:737:20)
+    at exports.emitMessage (node:internal/per_context/messageport:23:28)
+ModuleWarning: Module Warning (from ./node_modules/sass-loader/dist/cjs.js):
+The same color styles are generated multiple times. Read more about how style duplication can be avoided in a dedicated guide. https://github.com/angular/components/blob/main/guides/duplicate-theming-styles.md
+
+node_modules/@angular/material/core/theming/_theming.scss 352:7          private-check-duplicate-theme-styles()
+node_modules/@angular/material/legacy-core/theming/_all-theme.scss 43:3  all-legacy-component-themes()
+src/styles.scss 67:1                                                     root stylesheet
+
+    at Object.emitWarning (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/NormalModule.js:601:6)
+    at Object.warn (/home/kushal/src/angular/angularfifteen/node_modules/sass-loader/dist/utils.js:155:25)
+    at Worker.<anonymous> (/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/sass/sass-service.js:136:36)
+    at Worker.emit (node:events:513:28)
+    at MessagePort.<anonymous> (node:internal/worker:243:53)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:737:20)
+    at exports.emitMessage (node:internal/per_context/messageport:23:28)
+ @ ./src/styles.scss?ngGlobalStyle
+
+2023-05-25 03:42:59: webpack 5.80.0 compiled in 26724 ms (1de61b1379097e26)
+    [webpack.cache.PackFileCacheStrategy] Storing pack...
+    [webpack.cache.PackFileCacheStrategy] Capturing build dependencies... (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/, /home/kushal/src/angular/angularfifteen/node_modules/css-loader/dist/cjs.js, /home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js, /home/kushal/src/angular/angularfifteen/node_modules/resolve-url-loader/index.js, /home/kushal/src/angular/angularfifteen/node_modules/sass-loader/dist/cjs.js, /home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js, /home/kushal/src/angular/angularfifteen/node_modules/mini-css-extract-plugin/dist/loader.js, /home/kushal/src/angular/angularfifteen/node_modules/@ngtools/webpack/src/ivy/index.js)
+<t> [webpack.cache.PackFileCacheStrategy] resolve build dependencies: 1911.66958 ms
+<t> [webpack.cache.PackFileCacheStrategy] snapshot build dependencies: 62.71468 ms
+    [webpack.cache.PackFileCacheStrategy] Captured build dependencies
+    [webpack.cache.PackFileCacheStrategy] 1626 fresh items in cache put into pack 0
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|/home/kushal/src/angular/angularfifteen/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kushal/src/angular/angularfifteen/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!/home/kushal/src/angular/angularfifteen/node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]!/home/kushal/src/angular/angularfifteen/src/styles.scss?ngGlobalStyle': 2.368853 ms
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item: No serializer registered for SassWarning
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> Array { 1 items } -> webpack/lib/ModuleWarning -> SassWarning
+    [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|/home/kushal/src/angular/angularfifteen/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!/home/kushal/src/angular/angularfifteen/node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]!/home/kushal/src/angular/angularfifteen/src/styles.scss?ngGlobalStyle': Error: No serializer registered for SassWarning
+    while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> Array { 1 items } -> webpack/lib/ModuleWarning -> SassWarning
+        at ObjectMiddleware.getSerializerFor (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ObjectMiddleware.js:237:22)
+        at process (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ObjectMiddleware.js:465:23)
+        at write (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ObjectMiddleware.js:387:6)
+        at ModuleWarning.serialize (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/ModuleWarning.js:45:3)
+        at ClassSerializer.serialize (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/util/makeSerializable.js:15:7)
+        at process (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ObjectMiddleware.js:480:17)
+        at write (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ObjectMiddleware.js:387:6)
+        at ArraySerializer.serialize (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ArraySerializer.js:10:29)
+        at process (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ObjectMiddleware.js:480:17)
+        at write (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ObjectMiddleware.js:387:6)
+        at NormalModule.serialize (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/Module.js:988:3)
+        at NormalModule.serialize (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/NormalModule.js:1376:9)
+        at ClassSerializer.serialize (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/util/makeSerializable.js:15:7)
+        at process (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ObjectMiddleware.js:480:17)
+        at write (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ObjectMiddleware.js:387:6)
+        at PackContentItems.serialize (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/cache/PackFileCacheStrategy.js:625:6)
+        at ClassSerializer.serialize (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/util/makeSerializable.js:15:7)
+        at process (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ObjectMiddleware.js:480:17)
+        at ObjectMiddleware.serialize (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ObjectMiddleware.js:539:5)
+        at /home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/ObjectMiddleware.js:525:12
+        at /home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/SerializerMiddleware.js:106:11
+        at /home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/util/memoize.js:22:13
+        at /home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/SerializerMiddleware.js:102:14
+        at /home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/util/memoize.js:22:13
+        at serialize (/home/kushal/src/angular/angularfifteen/node_modules/webpack/lib/serialization/FileMiddleware.js:129:21)
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs': 1.382693 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/core/fesm2022/core.mjs': 1.529596 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/forms/fesm2022/forms.mjs': 1.383088 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/material/fesm2022/button.mjs': 1.795937 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/material/fesm2022/autocomplete.mjs': 1.744282 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/material/fesm2022/datepicker.mjs': 3.321423 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/material/fesm2022/form-field.mjs': 2.97786 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/material/fesm2022/select.mjs': 1.040298 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/material/fesm2022/list.mjs': 1.086761 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/material/fesm2022/stepper.mjs': 2.694517 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/material/fesm2022/tabs.mjs': 1.994601 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/material/fesm2022/chips.mjs': 1.312399 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/material/fesm2022/table.mjs': 2.231513 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/material/fesm2022/core.mjs': 4.470519 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/router/fesm2022/router.mjs': 3.681957 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/rxjs/dist/esm/index.js': 1.111617 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/modules|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/rxjs/dist/esm/internal/Observable.js': 3.534036 ms
+    [webpack.cache.PackFileCacheStrategy] Serialization of 'FlagDependencyExportsPlugin|javascript/esm|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@angular/material/fesm2022/paginator.mjs': 3.86242 ms
+<i> [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/codeGeneration|/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js??ruleSet[1].rules[2].use[0]!/home/kushal/src/angular/angularfifteen/node_modules/@ngtools/webpack/src/ivy/index.js!/home/kushal/src/angular/angularfifteen/src/main.ts|9e04c8cc16f0363b|runtime': 18.241222 ms
+<i> [webpack.cache.PackFileCacheStrategy] Serialization of 'Compilation/assets|chunk179': 10.073517 ms
+<t> [webpack.cache.PackFileCacheStrategy] store pack: 364.301821 ms
+    [webpack.cache.PackFileCacheStrategy] Stored pack (1626 items, 1 files, 72 MiB)
+✔ Browser application bundle generation complete.
+- Copying assets...
+✔ Copying assets complete.
+- Generating index html...
+✔ Index html generation complete.
+- Generating service worker...
+✔ Service worker generation complete.
+
+Initial Chunk Files | Names         |  Raw Size | Estimated Transfer Size
+main.js             | main          | 598.01 kB |               139.79 kB
+styles.css          | styles        | 270.58 kB |                17.82 kB
+polyfills.js        | polyfills     |  33.00 kB |                10.62 kB
+runtime.js          | runtime       | 906 bytes |               517 bytes
+
+| Initial Total | 902.48 kB |               168.74 kB
+
+Build at: 2023-05-25T07:43:03.157Z - Hash: 1de61b1379097e26 - Time: 30307ms
+
+./src/styles.scss.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]!./src/styles.scss?ngGlobalStyle - Warning: Module Warning (from ./node_modules/sass-loader/dist/cjs.js):
+The same color styles are generated multiple times. Read more about how style duplication can be avoided in a dedicated guide. https://github.com/angular/components/blob/main/guides/duplicate-theming-styles.md
+
+node_modules/@angular/material/core/theming/_theming.scss 352:7          private-check-duplicate-theme-styles()
+node_modules/@angular/material/legacy-core/theming/_all-theme.scss 43:3  all-legacy-component-themes()
+src/styles.scss 67:1                                                     root stylesheet
+
+
+Warning: bundle initial exceeded maximum budget. Budget 500.00 kB was not met by 402.48 kB with a total of 902.48 kB.
+
+
+Done in 32.28s.
+```
