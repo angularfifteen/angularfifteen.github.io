@@ -12,3 +12,4 @@ Mem:            15Gi       3.7Gi       4.1Gi       424Mi       7.4Gi        10Gi
 Swap:          8.0Gi       853Mi       7.2Gi
 System Storage
 1.8G	.
+```
