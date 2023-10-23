@@ -55,3 +55,33 @@ yarn install v1.22.19
 success Already up-to-date.
 Done in 0.36s.
 ```
+Latest version:     1.0.30001553
+Installed version:  1.0.30001551
+Removing old caniuse-lite from lock file
+Installing new caniuse-lite version
+$ yarn add -W caniuse-lite
+error An unexpected error occurred: "https://registry.yarnpkg.com/caniuse-lite: connect ENETUNREACH 2606:4700::6810:1a22:443".
+
+Error: Command failed: yarn add -W caniuse-lite
+error An unexpected error occurred: "https://registry.yarnpkg.com/caniuse-lite: connect ENETUNREACH 2606:4700::6810:1a22:443".
+
+    at checkExecSyncError (node:child_process:890:11)
+    at Object.execSync (node:child_process:962:15)
+    at updatePackageManually (/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/node_modules/update-browserslist-db/index.js:216:18)
+    at updateDB (/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/node_modules/update-browserslist-db/index.js:281:5)
+    at Object.<anonymous> (/home/kushal/src/angular/angularfifteen/node_modules/@angular-devkit/build-angular/node_modules/browserslist/cli.js:42:3)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+
+Problem with `yarn add -W caniuse-lite` call. Run it manually.
+```bash
+Latest version:     1.0.30001553
+Installed version:  1.0.30001553
+caniuse-lite is up to date
+caniuse-lite has been successfully updated
+
+No target browser changes
+```
+```bash
