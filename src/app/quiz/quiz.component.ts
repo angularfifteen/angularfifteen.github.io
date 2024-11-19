@@ -8,9 +8,10 @@ import { Title } from '@angular/platform-browser';
 import { filter, map } from 'rxjs/operators';
 import { MatSnackBar } from '@angular/material/snack-bar';
 @Component({
-  selector: 'app-quiz',
-  templateUrl: './quiz.component.html',
-  styleUrls: ['./quiz.component.scss'],
+    selector: 'app-quiz',
+    templateUrl: './quiz.component.html',
+    styleUrls: ['./quiz.component.scss'],
+    standalone: false
 })
 export class QuizComponent implements OnInit {
   quiz: Quiz;
