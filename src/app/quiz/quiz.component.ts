@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Quiz } from '../quiz';
 import { Option } from '../option';
 import { QuizService } from '../quiz.service';
@@ -11,6 +11,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
     selector: 'app-quiz',
     templateUrl: './quiz.component.html',
     styleUrls: ['./quiz.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class QuizComponent implements OnInit {

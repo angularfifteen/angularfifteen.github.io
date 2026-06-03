@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { LoadingService } from './loading.service';
 import { PromptUpdateService } from './prompt-update.service';
 
@@ -6,6 +6,7 @@ import { PromptUpdateService } from './prompt-update.service';
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class AppComponent {
